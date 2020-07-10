@@ -1,7 +1,19 @@
 <html>
     <head>
-        <title>Number to Text</title>
+        <title>Krishna Ltd.</title>
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="Home.css" /> 
         <script>
+            function a ()
+            {
+                var i1 = parseInt(document.getElementById('V1').value);
+                var i2 = parseInt(document.getElementById('V2').value);
+                var gast = document.getElementById('GST').value = (i1 + i2) * 5/100 ;
+                var profit = document.getElementById('profit').value = Math.round((i1 + i2+ gast)* 20/100);
+                var delayInMilliseconds = 100;
+                setTimeout(function() {
+                var last = document.getElementById('mmsd').value = Math.round((gast + i1 +i2)*20/100+(gast + i1 +i2));
+                }, delayInMilliseconds)
+            }
             function b() {
             var z1 = parseInt(document.getElementById('Box').value);
             var z2 = parseInt(document.getElementById('Box2').value);
@@ -138,8 +150,18 @@
         </script>
     </head>
     <body>
-        <input type="number" id="Box" value="0"> <input type="number" id="Box2" value="0"> <input type="number" id="Box3" value="0"> <br> 
+        Hi Representative!!
+        <form class="GGB">
+           <b>Enter the Value of Product</b> <input type="text" class="ASD" id="V1" style ="height : 30px; width : 50px; font-size: 25px;">  <br>
+           <b>Enter the Value of Transport:</b> <input type="number" class="ASD" value="8" id="V2"> <br>
+           <b>GST for your product is:</b> <input type="text" class="ASD" id="GST"> <br>
+           <b>Profit Earned:</b> <input type="text" class="ASD" id="profit"> <br>
+           <b>Total Value after including GST and Transport</b> <input type="number" class="ASD" id="mmsd"> <br>
+           <button type="button" onclick="a();">Click to know GST</button>       
+           <HR></HR>
+           <input type="number" id="Box" value="0"> <input type="number" id="Box2" value="0"> <input type="number" id="Box3" value="0"> <br> 
         <input type="text" id="Az1">  <input type="text" id="Az2"> <input type="text" id="Az3"> <br>
         <button type="button" onClick="b()">Clcik Me!!</button>
+        </form>
     </body>
 </html>

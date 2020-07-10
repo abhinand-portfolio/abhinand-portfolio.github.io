@@ -1,2 +1,13 @@
 @media only screen and (max-device-width: 480px) {
+    div header {
+        height: 93px;
+        position: relative;
+    }
+    form.text V1 {
+        font-size: 150pt;
+        
+    }
+    div form.GGB.ASD {
+           height: 50px;
+    }
 }
